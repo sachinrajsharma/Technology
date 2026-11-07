@@ -14,7 +14,7 @@ export const FOOTER: FooterConfig = {
   cta: { eyebrow: "Build. Ship. Grow.", title: "Have something you want built?", text: "Websites, web and mobile apps and AI-powered software, designed and engineered end to end. Tell us what you need.", primary: {"label":"Start a project","href":"/contact"}, secondary: {"label":"What we build","href":"/#build"}, tertiary: {"label":"Services in detail","href":"/services"} },
   appsTitle: "One family. One account.",
   apps: [
-    { key: "home", name: "Yugti", href: env("NEXT_PUBLIC_APP_URL_HOME") || "https://yugti.com", icon: "Home", external: true },
+    { key: "home", name: "Yugty", href: env("NEXT_PUBLIC_APP_URL_HOME") || "https://yugti.com", icon: "Home", external: true },
     { key: "studio", name: "Studio", href: env("NEXT_PUBLIC_APP_URL_STUDIO") || "https://yugtistudio.com", icon: "Atom", external: true },
     { key: "colleges", name: "Colleges", href: env("NEXT_PUBLIC_APP_URL_COLLEGES") || "https://yugticolleges.com", icon: "Landmark", external: true },
     { key: "learning", name: "Learning", href: env("NEXT_PUBLIC_APP_URL_LEARNING") || "https://yugtilearning.com", icon: "GraduationCap", external: true },
