@@ -15,11 +15,13 @@ export const FOOTER: FooterConfig = {
   appsTitle: "One family. One account.",
   apps: [
     { key: "home", name: "Yugti", href: env("NEXT_PUBLIC_APP_URL_HOME") || "https://yugti.com", icon: "Home", external: true },
-    { key: "ai", name: "Yugti AI", href: env("NEXT_PUBLIC_APP_URL_AI") || "https://yugti.ai", icon: "Sparkles", external: true },
-    { key: "overseas", name: "Overseas Education", href: env("NEXT_PUBLIC_APP_URL_OVERSEAS") || "https://yugtioverseaseducation.com", icon: "Globe", external: true },
+    { key: "studio", name: "Studio", href: env("NEXT_PUBLIC_APP_URL_STUDIO") || "https://yugtistudio.com", icon: "Atom", external: true },
+    { key: "colleges", name: "Colleges", href: env("NEXT_PUBLIC_APP_URL_COLLEGES") || "https://yugticolleges.com", icon: "Landmark", external: true },
     { key: "learning", name: "Learning", href: env("NEXT_PUBLIC_APP_URL_LEARNING") || "https://yugtilearning.com", icon: "GraduationCap", external: true },
+    { key: "ai", name: "Yugti AI", href: env("NEXT_PUBLIC_APP_URL_AI") || "https://yugti.ai", icon: "Sparkles", external: true },
+    { key: "tech", name: "Tech", href: "/", icon: "Code2" },
     { key: "jobs", name: "Jobs", href: env("NEXT_PUBLIC_APP_URL_JOBS") || "https://yugtijobs.com", icon: "Briefcase", external: true },
-    { key: "technology", name: "Technology", href: "/", icon: "Code2" },
+    { key: "pr", name: "PR", href: env("NEXT_PUBLIC_APP_URL_PR") || "https://yugtipr.com", icon: "Megaphone", external: true },
   ],
   newsletter: { label: "Get news and updates", button: "Join", endpoint: "/api/newsletter", source: "footer" },
   columns: [

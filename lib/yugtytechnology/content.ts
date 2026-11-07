@@ -14,11 +14,13 @@ export const BRAND = {
 
 /** Other Yugty portals. Each is optional: a link shows only when its URL is configured. */
 export const SIBLINGS: { label: string; env: string | undefined; nav?: boolean }[] = [
-  { label: "Yugti", env: process.env.NEXT_PUBLIC_YUGTI_URL || "https://yugti.com" },
-  { label: "Yugti AI", env: process.env.NEXT_PUBLIC_YUGTYAI_URL || "https://yugti.ai" },
-  { label: "Yugti Overseas Education", env: process.env.NEXT_PUBLIC_YUGTYOVERSEAS_URL || "https://yugtioverseaseducation.com" },
-  { label: "Yugti Learning", env: process.env.NEXT_PUBLIC_YUGTYLEARNING_URL || "https://yugtilearning.com", nav: true },
-  { label: "Yugti Jobs", env: process.env.NEXT_PUBLIC_YUGTYJOBS_URL || "https://yugtijobs.com", nav: true },
+  { label: "Yugti", env: process.env.NEXT_PUBLIC_APP_URL_HOME || "https://yugti.com" },
+  { label: "Yugti Studio", env: process.env.NEXT_PUBLIC_APP_URL_STUDIO || "https://yugtistudio.com" },
+  { label: "Yugti Colleges", env: process.env.NEXT_PUBLIC_APP_URL_COLLEGES || "https://yugticolleges.com" },
+  { label: "Yugti Learning", env: process.env.NEXT_PUBLIC_APP_URL_LEARNING || "https://yugtilearning.com", nav: true },
+  { label: "Yugti AI", env: process.env.NEXT_PUBLIC_APP_URL_AI || "https://yugti.ai" },
+  { label: "Yugti Jobs", env: process.env.NEXT_PUBLIC_APP_URL_JOBS || "https://yugtijobs.com", nav: true },
+  { label: "Yugti PR", env: process.env.NEXT_PUBLIC_APP_URL_PR || "https://yugtipr.com" },
 ];
 
 /** AI tools live on another Yugty portal; set its origin to make them links. Empty means they show as plain cards. */
