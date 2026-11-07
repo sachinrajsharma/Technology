@@ -15,8 +15,8 @@ export const FOOTER: FooterConfig = {
   appsTitle: "One family. One account.",
   apps: [
     { key: "home", name: "Yugty", href: env("NEXT_PUBLIC_APP_URL_HOME") || "https://yugti.com", icon: "Home", external: true },
-    { key: "studio", name: "Studio", href: env("NEXT_PUBLIC_APP_URL_STUDIO") || "https://yugtistudio.com", icon: "Atom", external: true },
-    { key: "colleges", name: "Colleges", href: env("NEXT_PUBLIC_APP_URL_COLLEGES") || "https://yugticolleges.com", icon: "Landmark", external: true },
+    { key: "studio", name: "Campus", href: env("NEXT_PUBLIC_APP_URL_STUDIO") || "https://yugticampus.com", icon: "Atom", external: true },
+    { key: "colleges", name: "Overseas Education", href: env("NEXT_PUBLIC_APP_URL_COLLEGES") || "https://yugtioverseaseducation.com", icon: "Landmark", external: true },
     { key: "learning", name: "Learning", href: env("NEXT_PUBLIC_APP_URL_LEARNING") || "https://yugtilearning.com", icon: "GraduationCap", external: true },
     { key: "ai", name: "Yugty AI", href: env("NEXT_PUBLIC_APP_URL_AI") || "https://yugti.ai", icon: "Sparkles", external: true },
     { key: "tech", name: "Tech", href: "/", icon: "Code2" },
