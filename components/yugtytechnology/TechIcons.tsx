@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** Small looping icons for the eight things YugtyTechnology builds. Pure SVG; motion is CSS (see division.css) and stops for reduced motion. */
+/** Small looping icons for the eight things Yugti Tech builds. Pure SVG; motion is CSS (see division.css) and stops for reduced motion. */
 const ICONS: Record<string, ReactNode> = {
   WEB: (
     <svg viewBox="0 0 48 48" className="tic tic-web">

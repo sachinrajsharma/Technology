@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Footer, Nav } from "@/components/yugtytechnology/Chrome";
 import { BRAND } from "@/lib/yugtytechnology/content";
 
-export const metadata: Metadata = { title: "Privacy", description: "How YugtyTechnology handles the details you send us." };
+export const metadata: Metadata = { title: "Privacy", description: "How Yugti Tech handles the details you send us." };
 
 export default function Privacy() {
   return (

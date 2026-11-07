@@ -1,6 +1,6 @@
 import type { FooterOffice } from "./types";
 
-/** The company offices, shown in the footer of every Yugty app. */
+/** The company offices, shown in the footer of every Yugti app. */
 export const STANDARD_OFFICES: FooterOffice[] = [
   { city: "New Jersey, USA", addr: "103 Carnegie Center Drive, Princeton, NJ 08540", hq: true },
   { city: "Noida, India", addr: "4th Floor, Wesource Building, Sector 125, Noida, UP 201313", href: "https://share.google/OeH9CLBjeBa3VssRT" },

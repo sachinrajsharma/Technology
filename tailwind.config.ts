@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-// Tailwind is used only by the standard footer shared with the other Yugty sites.
+// Tailwind is used only by the standard footer shared with the other Yugti sites.
 // Preflight is off so it cannot disturb the homepage's own CSS.
 const config: Config = {
   // Utilities are scoped under #yugty-footer so this site's own page-level CSS cannot override them.

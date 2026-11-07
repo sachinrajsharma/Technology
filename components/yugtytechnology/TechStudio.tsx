@@ -3,7 +3,7 @@ import { TECH_STEPS } from "@/lib/yugtytechnology/content";
 
 /**
  * "Idea to live product": a small build studio that plays a sample project from first idea to launch and its first
- * improvement, in the five steps YugtyTechnology works in. All motion is CSS driven by stage classes that
+ * improvement, in the five steps Yugti Tech works in. All motion is CSS driven by stage classes that
  * /public/yugtytechnology/tech-studio.js sets; without scripts it shows the finished project. The project is an illustrative sample.
  */
 

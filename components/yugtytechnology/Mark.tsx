@@ -1,4 +1,4 @@
-/** The YugtyTechnology mark: angle brackets around a spark, in the Tech violet to cyan gradient. */
+/** The Yugti Tech mark: angle brackets around a spark, in the Tech violet to cyan gradient. */
 export function Mark({ size = 28 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true" focusable="false">

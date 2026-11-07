@@ -30,7 +30,7 @@ export default function TechHome() {
       <main id="main-content" className="dv dv-tech" style={ACCENT}>
         <section className="dv-hero" id="top">
           <div className="dv-hero-copy">
-            <p className="vl-kicker">YUGTYTECHNOLOGY · SOFTWARE, APPS, AI</p>
+            <p className="vl-kicker">YUGTI TECH · SOFTWARE, APPS, AI</p>
             <h1 className="dv-h1">Imagine it. We engineer it.</h1>
             <p className="vl-lead">{BRAND.description} Tell us the problem; we will recommend what to build and in what order.</p>
             <div className="vl-cta-row">
@@ -86,7 +86,7 @@ export default function TechHome() {
               <Agent key={a.name} i={i} {...a} />
             ))}
           </div>
-          <p className="dv-tracks-label">Tech skills you can learn on the Yugty platform</p>
+          <p className="dv-tracks-label">Tech skills you can learn on the Yugti platform</p>
           <ul className="dv-tracks">
             {TECH_TRACKS.map((t) => (
               <li key={t}>{t}</li>
