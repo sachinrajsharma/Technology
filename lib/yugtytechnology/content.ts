@@ -15,8 +15,8 @@ export const BRAND = {
 /** Other Yugty portals. Each is optional: a link shows only when its URL is configured. */
 export const SIBLINGS: { label: string; env: string | undefined; nav?: boolean }[] = [
   { label: "Yugty", env: process.env.NEXT_PUBLIC_APP_URL_HOME || "https://yugti.com" },
-  { label: "Yugty Studio", env: process.env.NEXT_PUBLIC_APP_URL_STUDIO || "https://yugtistudio.com" },
-  { label: "Yugty Colleges", env: process.env.NEXT_PUBLIC_APP_URL_COLLEGES || "https://yugticolleges.com" },
+  { label: "Yugty Campus", env: process.env.NEXT_PUBLIC_APP_URL_STUDIO || "https://yugticampus.com" },
+  { label: "Yugty Overseas Education", env: process.env.NEXT_PUBLIC_APP_URL_COLLEGES || "https://yugtioverseaseducation.com" },
   { label: "Yugty Learning", env: process.env.NEXT_PUBLIC_APP_URL_LEARNING || "https://yugtilearning.com", nav: true },
   { label: "Yugty AI", env: process.env.NEXT_PUBLIC_APP_URL_AI || "https://yugti.ai" },
   { label: "Yugty Jobs", env: process.env.NEXT_PUBLIC_APP_URL_JOBS || "https://yugtijobs.com", nav: true },
