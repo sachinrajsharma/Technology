@@ -6,7 +6,7 @@ import { BRAND } from "@/lib/yugtytechnology/content";
 
 export const metadata: Metadata = {
   title: "Start a project",
-  description: "Tell Yugti Tech what you want to build. We reply with questions or a plan.",
+  description: "Tell Yugty Tech what you want to build. We reply with questions or a plan.",
 };
 
 export default async function Contact({ searchParams }: { searchParams: Promise<{ kind?: string }> }) {

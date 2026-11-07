@@ -39,7 +39,7 @@ function Col({ col }: { col: FooterColumn }) {
 }
 
 /**
- * The standard footer of every Yugti web application: a call-to-action panel with the app family, the brand with newsletter and social links,
+ * The standard footer of every Yugty web application: a call-to-action panel with the app family, the brand with newsletter and social links,
  * four link columns, a share card, the company offices and a legal bar. Only the config differs between apps.
  */
 export default function StandardFooter({ config }: { config: FooterConfig }) {

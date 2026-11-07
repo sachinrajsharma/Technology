@@ -1,4 +1,4 @@
-/* Yugti shared effects: scroll progress, cursor light, hero parallax, scroll-driven journeys, pointer spotlight, card tilt,
+/* Yugty shared effects: scroll progress, cursor light, hero parallax, scroll-driven journeys, pointer spotlight, card tilt,
    magnetic buttons, count-up and scroll-lit words. Plain JS. Everything is optional polish: pages are complete without it,
    and reduced motion turns the motion off. */
 (function () {

@@ -4,7 +4,7 @@ export type FooterApp = { key: string; name: string; href: string; icon: string;
 export type FooterOffice = { city: string; addr: string; hq?: boolean; href?: string };
 
 /**
- * Everything that differs between Yugti web applications. The layout, offices, share card, legal bar and behaviour are the same everywhere
+ * Everything that differs between Yugty web applications. The layout, offices, share card, legal bar and behaviour are the same everywhere
  * (see StandardFooter.tsx), so every app looks and works like the others. Change copy, links and the app list here, never the layout.
  */
 export type FooterConfig = {

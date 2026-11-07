@@ -1,4 +1,4 @@
-/* Yugti Tech additions on top of the Velora base and division styles. */
+/* Yugty Tech additions on top of the Velora base and division styles. */
 .dv-hero-vis { transform: none !important; }
 .vl h3, .vl h4 { color: var(--ink); }
 a.dv-bp { display: block; color: inherit; }

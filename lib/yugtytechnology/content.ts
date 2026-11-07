@@ -1,10 +1,10 @@
 /**
- * Content for the Yugti Tech portal. It comes from the Velora Tech brief. Nothing is invented: where the business has not
+ * Content for the Yugty Tech portal. It comes from the Velora Tech brief. Nothing is invented: where the business has not
  * published a number (project prices, timelines, client names) the page says so instead of showing one.
  */
 
 export const BRAND = {
-  name: "Yugti Tech",
+  name: "Yugty Tech",
   tagline: "Imagine it. We engineer it.",
   description:
     "We turn ideas into websites, web applications, Android and iOS apps, AI-powered solutions and scalable digital products.",
@@ -12,18 +12,18 @@ export const BRAND = {
   accent2: "#28d7ff",
 };
 
-/** Other Yugti portals. Each is optional: a link shows only when its URL is configured. */
+/** Other Yugty portals. Each is optional: a link shows only when its URL is configured. */
 export const SIBLINGS: { label: string; env: string | undefined; nav?: boolean }[] = [
   { label: "Yugti", env: process.env.NEXT_PUBLIC_APP_URL_HOME || "https://yugti.com" },
-  { label: "Yugti Studio", env: process.env.NEXT_PUBLIC_APP_URL_STUDIO || "https://yugtistudio.com" },
-  { label: "Yugti Colleges", env: process.env.NEXT_PUBLIC_APP_URL_COLLEGES || "https://yugticolleges.com" },
-  { label: "Yugti Learning", env: process.env.NEXT_PUBLIC_APP_URL_LEARNING || "https://yugtilearning.com", nav: true },
-  { label: "Yugti AI", env: process.env.NEXT_PUBLIC_APP_URL_AI || "https://yugti.ai" },
-  { label: "Yugti Jobs", env: process.env.NEXT_PUBLIC_APP_URL_JOBS || "https://yugtijobs.com", nav: true },
-  { label: "Yugti PR", env: process.env.NEXT_PUBLIC_APP_URL_PR || "https://yugtipr.com" },
+  { label: "Yugty Studio", env: process.env.NEXT_PUBLIC_APP_URL_STUDIO || "https://yugtistudio.com" },
+  { label: "Yugty Colleges", env: process.env.NEXT_PUBLIC_APP_URL_COLLEGES || "https://yugticolleges.com" },
+  { label: "Yugty Learning", env: process.env.NEXT_PUBLIC_APP_URL_LEARNING || "https://yugtilearning.com", nav: true },
+  { label: "Yugty AI", env: process.env.NEXT_PUBLIC_APP_URL_AI || "https://yugti.ai" },
+  { label: "Yugty Jobs", env: process.env.NEXT_PUBLIC_APP_URL_JOBS || "https://yugtijobs.com", nav: true },
+  { label: "Yugty PR", env: process.env.NEXT_PUBLIC_APP_URL_PR || "https://yugtipr.com" },
 ];
 
-/** AI tools live on another Yugti portal; set its origin to make them links. Empty means they show as plain cards. */
+/** AI tools live on another Yugty portal; set its origin to make them links. Empty means they show as plain cards. */
 const AI_BASE = (process.env.NEXT_PUBLIC_AI_TOOLS_URL ?? "").replace(/\/$/, "");
 export function aiToolUrl(route: string): string | null {
   return AI_BASE ? `${AI_BASE}${route}` : null;
@@ -97,7 +97,7 @@ export const AI_AGENTS: AiTool[] = [
 export const TECH_TRACKS = ["AI and ML", "Data and Analytics", "Software", "Cloud and DevOps", "Cybersecurity", "Design", "Digital Marketing", "Blockchain and Web3"];
 
 export const FAQS: [string, string][] = [
-  ["What does Yugti Tech build?", "Websites, web applications, Android and iOS apps, software, AI-powered solutions and digital transformation, with consulting to decide what to build first."],
+  ["What does Yugty Tech build?", "Websites, web applications, Android and iOS apps, software, AI-powered solutions and digital transformation, with consulting to decide what to build first."],
   ["How much does a project cost?", "It depends on scope, so no prices are published here. Tell us what you want to build and we will respond with a plan."],
   ["How long does a project take?", "That depends on the size of the work, so we do not quote a standard timeline. After the Discover step you get a plan with milestones you can hold us to."],
   ["Will I see progress before launch?", "Yes. We deliver in steps, and you can try working software at each one."],

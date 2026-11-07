@@ -1,4 +1,4 @@
-/* Yugti division portals: hero animations and small interactions. Plain JS, no dependencies.
+/* Yugty division portals: hero animations and small interactions. Plain JS, no dependencies.
    Every animation pauses off screen and in hidden tabs, and draws one still frame for reduced motion.
    The pages are fully readable without this file. */
 (function () {
