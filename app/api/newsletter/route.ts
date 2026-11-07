@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     const r = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from: process.env.NEWSLETTER_FROM || "Yugty <onboarding@resend.dev>", to: [to], subject: "New newsletter sign-up", text: `Email: ${email}\nSource: ${String(body.source ?? "footer").slice(0, 60)}` }),
+      body: JSON.stringify({ from: process.env.NEWSLETTER_FROM || "Yugti <onboarding@resend.dev>", to: [to], subject: "New newsletter sign-up", text: `Email: ${email}\nSource: ${String(body.source ?? "footer").slice(0, 60)}` }),
     });
     if (!r.ok) throw new Error(String(r.status));
   } catch {

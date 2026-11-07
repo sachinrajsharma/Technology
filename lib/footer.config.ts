@@ -1,15 +1,15 @@
 import type { FooterConfig } from "@/components/standard-footer/types";
 
 /**
- * Footer settings for YugtyTechnology. The layout is the standard footer used by every Yugty web application
+ * Footer settings for Yugti Tech. The layout is the standard footer used by every Yugti web application
  * (components/standard-footer); only the values below are specific to this app.
- * Override a family URL with NEXT_PUBLIC_APP_URL_HOME, _AI, _OVERSEAS, _LEARNING, _JOBS or _TECHNOLOGY.
+ * Override a family URL with NEXT_PUBLIC_APP_URL_HOME, _STUDIO, _COLLEGES, _LEARNING, _AI, _TECH, _JOBS or _PR.
  */
 const env = (k: string) => (process.env[k] ?? "").trim();
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const FOOTER: FooterConfig = {
-  brand: { name: "YugtyTechnology", logoSrc: "/yugty-logo.svg", logoAlt: "YugtyTechnology", tagline: "Imagine it. We engineer it." },
+  brand: { name: "Yugti Tech", logoSrc: "/yugty-logo.svg", logoAlt: "Yugti Tech", tagline: "Imagine it. We engineer it." },
   siteUrl: SITE_URL,
   cta: { eyebrow: "Build. Ship. Grow.", title: "Have something you want built?", text: "Websites, web and mobile apps and AI-powered software, designed and engineered end to end. Tell us what you need.", primary: {"label":"Start a project","href":"/contact"}, secondary: {"label":"What we build","href":"/#build"}, tertiary: {"label":"Services in detail","href":"/services"} },
   appsTitle: "One family. One account.",
@@ -86,6 +86,6 @@ export const FOOTER: FooterConfig = {
     { label: "Facebook", href: "", icon: "facebook" },
   ],
   supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "hello@yourdomain.com",
-  share: { title: "Know someone who should see YugtyTechnology?", text: "YugtyTechnology: websites, apps and AI-powered software", subject: "Have a look at YugtyTechnology" },
+  share: { title: "Know someone who should see Yugti Tech?", text: "Yugti Tech: websites, apps and AI-powered software", subject: "Have a look at Yugti Tech" },
   legal: [{ href: "/privacy", label: "Privacy Policy" }],
 };
