@@ -1,6 +1,6 @@
-# Yugti Tech
+# Yugty Tech
 
-Home page and project-brief flow for Yugti Tech (websites, web and mobile apps, software, AI-powered solutions, digital transformation, consulting). Built from the Velora Tech design.
+Home page and project-brief flow for Yugty Tech (websites, web and mobile apps, software, AI-powered solutions, digital transformation, consulting). Built from the Velora Tech design.
 
 ## Run
 

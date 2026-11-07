@@ -64,7 +64,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const from = process.env.INQUIRY_FROM ?? "Yugti Tech <onboarding@resend.dev>";
+  const from = process.env.INQUIRY_FROM ?? "Yugty Tech <onboarding@resend.dev>";
   const html = `<p><b>${esc(name)}</b> &lt;${esc(email)}&gt;${phone ? ` · ${esc(phone)}` : ""}${company ? ` · ${esc(company)}` : ""}</p><p>Project: ${esc(kind)} · Budget: ${esc(budget)}</p><p style="white-space:pre-wrap">${esc(message)}</p>`;
   try {
     const res = await fetch("https://api.resend.com/emails", {

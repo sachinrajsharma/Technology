@@ -16,9 +16,9 @@ export function Nav() {
   return (
     <header className="dv-nav">
       <div className="dv-nav-in">
-        <Link href="/" className="dv-brand" aria-label="Yugti Tech home">
+        <Link href="/" className="dv-brand" aria-label="Yugty Tech home">
           <Mark size={28} />
-          <span>YUGTI</span>
+          <span>YUGTY</span>
           <b>TECH</b>
         </Link>
         <nav className="dv-links" aria-label="Sections">
@@ -27,7 +27,7 @@ export function Nav() {
           ))}
         </nav>
         {sibs.some((s) => s.nav) ? (
-          <div className="dv-sibs" aria-label="Other Yugti portals">
+          <div className="dv-sibs" aria-label="Other Yugty portals">
             {sibs.filter((s) => s.nav).map((s) => (
               <a key={s.label} href={s.env} className="dv-sib" rel="noopener"><i aria-hidden="true" />{s.label}</a>
             ))}
@@ -52,7 +52,7 @@ export function Nav() {
   );
 }
 
-/** The standard Yugti footer. Edit lib/footer.config.ts to change its content for this app. */
+/** The standard Yugty footer. Edit lib/footer.config.ts to change its content for this app. */
 export function Footer() {
   return (
     <div id="yugty-footer">
@@ -87,7 +87,7 @@ export function Faq({ items }: { items: [string, string][] }) {
 export function Ticker({ items }: { items: string[] }) {
   const row = (p: string) => items.map((t, i) => <span key={p + i}><i aria-hidden="true" />{t}</span>);
   return (
-    <div className="vl-ticker" role="group" aria-label="What Yugti Tech builds">
+    <div className="vl-ticker" role="group" aria-label="What Yugty Tech builds">
       <div className="vl-ticker-track">
         {row("a")}
         <div style={{ display: "contents" }} aria-hidden="true">{row("b")}</div>
@@ -104,7 +104,7 @@ export function FinalCta({ title }: { title: string }) {
         <Link className="vl-btn vl-btn-primary" href="/contact">Start a project</Link>
         <Link className="vl-btn vl-btn-ghost" href="/services">See services in detail</Link>
       </div>
-      <p className="dv-final-note">Yugti Tech</p>
+      <p className="dv-final-note">Yugty Tech</p>
     </section>
   );
 }

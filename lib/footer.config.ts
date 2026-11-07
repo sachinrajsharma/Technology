@@ -1,7 +1,7 @@
 import type { FooterConfig } from "@/components/standard-footer/types";
 
 /**
- * Footer settings for Yugti Tech. The layout is the standard footer used by every Yugti web application
+ * Footer settings for Yugty Tech. The layout is the standard footer used by every Yugty web application
  * (components/standard-footer); only the values below are specific to this app.
  * Override a family URL with NEXT_PUBLIC_APP_URL_HOME, _STUDIO, _COLLEGES, _LEARNING, _AI, _TECH, _JOBS or _PR.
  */
@@ -9,7 +9,7 @@ const env = (k: string) => (process.env[k] ?? "").trim();
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const FOOTER: FooterConfig = {
-  brand: { name: "Yugti Tech", logoSrc: "/yugty-logo.svg", logoAlt: "Yugti Tech", tagline: "Imagine it. We engineer it." },
+  brand: { name: "Yugty Tech", logoSrc: "/yugty-logo.svg", logoAlt: "Yugty Tech", tagline: "Imagine it. We engineer it." },
   siteUrl: SITE_URL,
   cta: { eyebrow: "Build. Ship. Grow.", title: "Have something you want built?", text: "Websites, web and mobile apps and AI-powered software, designed and engineered end to end. Tell us what you need.", primary: {"label":"Start a project","href":"/contact"}, secondary: {"label":"What we build","href":"/#build"}, tertiary: {"label":"Services in detail","href":"/services"} },
   appsTitle: "One family. One account.",
@@ -18,7 +18,7 @@ export const FOOTER: FooterConfig = {
     { key: "studio", name: "Studio", href: env("NEXT_PUBLIC_APP_URL_STUDIO") || "https://yugtistudio.com", icon: "Atom", external: true },
     { key: "colleges", name: "Colleges", href: env("NEXT_PUBLIC_APP_URL_COLLEGES") || "https://yugticolleges.com", icon: "Landmark", external: true },
     { key: "learning", name: "Learning", href: env("NEXT_PUBLIC_APP_URL_LEARNING") || "https://yugtilearning.com", icon: "GraduationCap", external: true },
-    { key: "ai", name: "Yugti AI", href: env("NEXT_PUBLIC_APP_URL_AI") || "https://yugti.ai", icon: "Sparkles", external: true },
+    { key: "ai", name: "Yugty AI", href: env("NEXT_PUBLIC_APP_URL_AI") || "https://yugti.ai", icon: "Sparkles", external: true },
     { key: "tech", name: "Tech", href: "/", icon: "Code2" },
     { key: "jobs", name: "Jobs", href: env("NEXT_PUBLIC_APP_URL_JOBS") || "https://yugtijobs.com", icon: "Briefcase", external: true },
     { key: "pr", name: "PR", href: env("NEXT_PUBLIC_APP_URL_PR") || "https://yugtipr.com", icon: "Megaphone", external: true },
@@ -86,6 +86,6 @@ export const FOOTER: FooterConfig = {
     { label: "Facebook", href: "", icon: "facebook" },
   ],
   supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL ?? "hello@yourdomain.com",
-  share: { title: "Know someone who should see Yugti Tech?", text: "Yugti Tech: websites, apps and AI-powered software", subject: "Have a look at Yugti Tech" },
+  share: { title: "Know someone who should see Yugty Tech?", text: "Yugty Tech: websites, apps and AI-powered software", subject: "Have a look at Yugty Tech" },
   legal: [{ href: "/privacy", label: "Privacy Policy" }],
 };

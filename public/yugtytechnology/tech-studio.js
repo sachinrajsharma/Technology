@@ -1,4 +1,4 @@
-/* Yugti Tech: "idea to live product". Plays a sample project through the five steps by setting stage classes
+/* Yugty Tech: "idea to live product". Plays a sample project through the five steps by setting stage classes
    (s0..s4) on the studio; all visuals are CSS. Plain JS. Pausable, and a still of the finished project for reduced motion. */
 (function () {
   var root = document.querySelector("[data-ts]");

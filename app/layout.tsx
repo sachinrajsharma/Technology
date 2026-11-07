@@ -17,10 +17,10 @@ export const viewport: Viewport = { themeColor: "#04060f", width: "device-width"
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: "Yugti Tech: Websites, apps and AI-powered software", template: "%s | Yugti Tech" },
+  title: { default: "Yugty Tech: Websites, apps and AI-powered software", template: "%s | Yugty Tech" },
   description: "We turn ideas into websites, web applications, Android and iOS apps, AI-powered solutions and scalable digital products.",
   icons: { icon: "/yugty-logo.svg" },
-  openGraph: { title: "Yugti Tech", description: "Imagine it. We engineer it.", type: "website", siteName: "Yugti Tech" },
+  openGraph: { title: "Yugty Tech", description: "Imagine it. We engineer it.", type: "website", siteName: "Yugty Tech" },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
