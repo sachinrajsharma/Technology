@@ -1,0 +1,37 @@
+/* YUGTY standard theme — reference: homepage4 (option-4-spotlight). Load LAST on every Yugty page. */
+:root{
+  --y-bg:#0a0a0c; --y-panel:#121216; --y-panel-2:#101014;
+  --y-ink:#f4f4f6; --y-mut:#8b8d98; --y-line:rgba(255,255,255,.10);
+  --y-primary:#ff6a2f; --y-secondary:#ffffff;
+  --y-grad:linear-gradient(90deg,#7cf0ff,#8b8bff,#ff8ad1);
+  --y-font-head:"Space Grotesk",sans-serif;
+  --y-font-body:"DM Sans",system-ui,sans-serif;
+  --y-font-ui:"Plus Jakarta Sans",system-ui,sans-serif;
+
+  /* shared.css engine (campus / PR) */
+  --bg:var(--y-bg); --ink:var(--y-ink); --mut:var(--y-mut); --line:var(--y-line);
+  --acc:var(--y-primary); --acc-grad:var(--y-grad);
+  --s-bg:var(--y-panel-2); --s-ink:var(--y-ink); --s-mut:var(--y-mut); --s-line:rgba(255,255,255,.12); --s-hov:rgba(255,255,255,.07);
+  --h-ring:rgba(255,255,255,.2); --h-line:rgba(255,255,255,.14); --h-core:#fff; --h-node:var(--y-panel); --h-panel:var(--y-panel); --h-pline:rgba(255,255,255,.12);
+  --f-bg:var(--y-bg); --f-ink:var(--y-ink); --f-mut:var(--y-mut); --f-line:var(--y-line); --f-acc:#7cf0ff;
+}
+html,body{background:var(--y-bg)!important;color:var(--y-ink)}
+
+/* ---- font family ---- */
+body,p,li,span,small,input,textarea,select,label,td,th,blockquote,figcaption,dd,dt{font-family:var(--y-font-body)}
+h1,h2,h3,h4,h5,h6{font-family:var(--y-font-head)!important;font-weight:600!important;letter-spacing:-.03em}
+nav a,header a,.nav a,button,.btn,[role="button"],[class*="btn"]{font-family:var(--y-font-ui)!important}
+code,pre,kbd,samp,[class*="mono"]{font-family:ui-monospace,Consolas,monospace!important}
+
+/* ---- font size (homepage4 scale) ---- */
+body{font-size:16px;font-weight:400;font-style:normal}
+h1{font-size:clamp(28px,4.2vw,36px)!important}
+h2{font-size:clamp(26px,3.6vw,40px)!important}
+nav a,.nav a{font-size:15px;font-weight:500}
+button,.btn{font-size:14px;font-weight:700}
+
+/* ---- primary / secondary ---- */
+.btn:not(.g),a.btn:not(.g){background:var(--y-primary)!important;color:#0a0a0c!important;box-shadow:0 14px 40px -14px var(--y-primary)!important}
+.grad{background:var(--y-grad)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+a:hover{text-decoration-color:var(--y-primary)}
+::selection{background:var(--y-primary);color:#0a0a0c}
