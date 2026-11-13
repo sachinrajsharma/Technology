@@ -4,7 +4,6 @@ import { AI_AGENTS, BRAND, FAQS, TECH_SERVICES, TECH_STEPS, TECH_TRACKS, aiToolU
 import { Faq, FinalCta, Footer, Nav, SectionHead, Ticker } from "./Chrome";
 import TechIcon from "./TechIcons";
 import TechStudio from "./TechStudio";
-import { AndroidWork, WebWork } from "./TechWork";
 
 const ACCENT = { "--a": BRAND.accent, "--a2": BRAND.accent2 } as CSSProperties;
 
@@ -66,9 +65,6 @@ export default function TechHome() {
           </div>
           <p className="vl-note">No prices or timelines are published here because every project is different. Tell us what you want to build and we will respond with a plan.</p>
         </section>
-
-        <WebWork />
-        <AndroidWork />
 
         <section className="dv-sec" id="process">
           <SectionHead kicker="HOW WE WORK" title={<>Five steps. <em>No surprises.</em></>} />
