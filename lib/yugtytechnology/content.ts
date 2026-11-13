@@ -21,6 +21,7 @@ export const SIBLINGS: { label: string; env: string | undefined; nav?: boolean }
   { label: "Yugty AI", env: process.env.NEXT_PUBLIC_APP_URL_AI || "https://yugti.ai" },
   { label: "Yugty Jobs", env: process.env.NEXT_PUBLIC_APP_URL_JOBS || "https://yugtijobs.com", nav: true },
   { label: "Yugty PR", env: process.env.NEXT_PUBLIC_APP_URL_PR || "https://yugtipr.com" },
+  { label: "Yugty Mathstudy", env: process.env.NEXT_PUBLIC_APP_URL_MATHSTUDY || "https://mathstudy.in" },
 ];
 
 /** AI tools live on another Yugty portal; set its origin to make them links. Empty means they show as plain cards. */

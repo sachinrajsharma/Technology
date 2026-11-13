@@ -17,7 +17,7 @@ export function Nav() {
     <header className="dv-nav">
       <div className="dv-nav-in">
         <Link href="/" className="dv-brand" aria-label="Yugty Tech home">
-          <Mark size={28} />
+          <Mark size={40} />
           <span>YUGTY</span>
           <b>TECH</b>
         </Link>
