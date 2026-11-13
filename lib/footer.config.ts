@@ -3,7 +3,7 @@ import type { FooterConfig } from "@/components/standard-footer/types";
 /**
  * Footer settings for Yugty Tech. The layout is the standard footer used by every Yugty web application
  * (components/standard-footer); only the values below are specific to this app.
- * Override a family URL with NEXT_PUBLIC_APP_URL_HOME, _STUDIO, _COLLEGES, _LEARNING, _AI, _TECH, _JOBS or _PR.
+ * Override a family URL with NEXT_PUBLIC_APP_URL_HOME, _STUDIO, _COLLEGES, _LEARNING, _AI, _TECH, _JOBS, _PR or _MATHSTUDY.
  */
 const env = (k: string) => (process.env[k] ?? "").trim();
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -22,6 +22,7 @@ export const FOOTER: FooterConfig = {
     { key: "tech", name: "Tech", href: "/", icon: "Code2" },
     { key: "jobs", name: "Jobs", href: env("NEXT_PUBLIC_APP_URL_JOBS") || "https://yugtijobs.com", icon: "Briefcase", external: true },
     { key: "pr", name: "PR", href: env("NEXT_PUBLIC_APP_URL_PR") || "https://yugtipr.com", icon: "Megaphone", external: true },
+    { key: "mathstudy", name: "Mathstudy", href: env("NEXT_PUBLIC_APP_URL_MATHSTUDY") || "https://mathstudy.in", icon: "BookOpen", external: true },
   ],
   newsletter: { label: "Get news and updates", button: "Join", endpoint: "/api/newsletter", source: "footer" },
   columns: [
