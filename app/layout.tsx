@@ -6,6 +6,7 @@ import "@/components/standard-footer/footer.css";
 import "@/components/yugtytechnology/base.css";
 import "@/components/yugtytechnology/division.css";
 import "@/components/yugtytechnology/yugtytechnology.css";
+import "@/components/yugtytechnology/yh.css";
 
 const display = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--vl-display", display: "swap" });
 const text = Inter({ subsets: ["latin"], variable: "--vl-text", display: "swap" });
