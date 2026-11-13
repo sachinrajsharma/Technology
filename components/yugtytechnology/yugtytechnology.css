@@ -34,3 +34,40 @@ a.dv-bp:hover { border-color: var(--a); }
 .yt-svc-item .vl-btn { justify-self: start; }
 .yt-prose h2 { font-family: var(--vl-display), sans-serif; font-size: 1.15em; margin: 1.4em 0 0.4em; }
 .yt-prose p { color: var(--mut); line-height: 1.7; }
+
+/* Showcase: web apps and Android apps */
+.tw-web { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 1.6vw, 28px); }
+.tw-apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 1.6vw, 28px); }
+.tw-card, .tw-app { --wa: #2f7bff; --wb: #28d7ff; position: relative; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--wa) 10%, #060a18), #04060f 70%); transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s; }
+.tw-card:hover, .tw-app:hover { border-color: var(--wb); transform: translateY(-4px); box-shadow: 0 24px 60px -28px var(--wa); }
+.tw-card h3, .tw-app h3 { margin: 4px 0 8px; font-family: var(--vl-display), sans-serif; font-size: 1.5em; background: linear-gradient(100deg, #fff, var(--wb)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tw-card p, .tw-app p { margin: 0 0 10px; color: var(--mut); overflow-wrap: anywhere; }
+.tw-card .tw-tag, .tw-app .tw-tag { font-size: 0.72em; letter-spacing: 0.16em; text-transform: uppercase; color: var(--wb); }
+.tw-card ul, .tw-app ul { margin: 6px 0 16px; padding: 0; list-style: none; display: grid; gap: 7px; font-size: 0.92em; }
+.tw-card li, .tw-app li { position: relative; padding-left: 20px; color: var(--ink); overflow-wrap: anywhere; }
+.tw-card li::before, .tw-app li::before { content: ""; position: absolute; left: 2px; top: 0.55em; width: 8px; height: 8px; border-radius: 2px; background: linear-gradient(135deg, var(--wa), var(--wb)); }
+.tw-who b { color: var(--ink); }
+.tw-body { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(18px, 2vw, 30px); flex: 1; }
+.tw-body .vl-btn, .tw-app .vl-btn { margin-top: auto; max-width: 100%; text-align: center; }
+.tw-browser { margin: clamp(14px, 1.6vw, 22px) clamp(14px, 1.6vw, 22px) 0; border: 1px solid var(--line2); border-radius: 10px 10px 0 0; border-bottom: 0; background: #070b1a; overflow: hidden; height: 170px; }
+.tw-bar { display: flex; align-items: center; gap: 6px; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+.tw-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line2); flex: none; }
+.tw-bar span { margin-left: 8px; padding: 2px 10px; border-radius: 99px; background: rgba(255, 255, 255, 0.06); font-size: 0.72em; color: var(--mut); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tw-page { padding: 16px; display: grid; gap: 9px; background: radial-gradient(120% 90% at 100% 0, color-mix(in srgb, var(--wa) 35%, transparent), transparent 60%); }
+.tw-page b { font-family: var(--vl-display), sans-serif; font-size: 1.3em; color: #fff; }
+.tw-page s { display: block; height: 7px; border-radius: 4px; background: rgba(255, 255, 255, 0.14); text-decoration: none; }
+.tw-page s:nth-of-type(2) { width: 72%; } .tw-page s:nth-of-type(3) { width: 48%; }
+.tw-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 4px; }
+.tw-tiles u { height: 38px; border-radius: 6px; text-decoration: none; background: linear-gradient(135deg, var(--wa), var(--wb)); opacity: 0.75; }
+.tw-app { padding: clamp(18px, 2vw, 28px); align-items: flex-start; }
+.tw-phone { align-self: center; position: relative; width: 112px; height: 190px; margin-bottom: 18px; border: 2px solid var(--line2); border-radius: 22px; padding: 26px 12px 12px; display: grid; align-content: start; gap: 9px; background: radial-gradient(120% 70% at 50% 0, color-mix(in srgb, var(--wa) 45%, #070b1a), #070b1a 75%); box-shadow: 0 20px 50px -20px var(--wa); }
+.tw-notch { position: absolute; top: 8px; left: 50%; width: 36px; height: 6px; border-radius: 4px; background: var(--line2); transform: translateX(-50%); }
+.tw-phone b { justify-self: center; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; font-family: var(--vl-display), sans-serif; font-size: 1.3em; color: #04060f; background: linear-gradient(135deg, var(--wa), var(--wb)); }
+.tw-phone s { display: block; height: 7px; border-radius: 4px; background: rgba(255, 255, 255, 0.16); text-decoration: none; }
+.tw-phone s:nth-of-type(2) { width: 70%; } .tw-phone s:nth-of-type(3) { width: 45%; }
+.tw-app small { margin-bottom: 14px; color: var(--mut); }
+.tw-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin-top: clamp(18px, 2vw, 32px); padding: clamp(16px, 2vw, 26px); border: 1px dashed var(--line2); border-radius: 12px; background: rgba(4, 6, 15, 0.6); }
+.tw-cta p { margin: 0; font-family: var(--vl-display), sans-serif; font-size: 1.15em; }
+@media (max-width: 1000px) { .tw-apps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .tw-web, .tw-apps { grid-template-columns: minmax(0, 1fr); } .tw-cta { flex-direction: column; align-items: stretch; text-align: center; } }
+@media (prefers-reduced-motion: reduce) { .tw-card, .tw-app { transition: none; } .tw-card:hover, .tw-app:hover { transform: none; } }
